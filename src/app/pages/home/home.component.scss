@@ -1,0 +1,77 @@
+@import "../../../variables";
+@import "../../../mixins";
+@import "../../../responsive";
+@import "../../../static";
+
+.banner-section,.carousel-section{
+    background: #fff;
+    .carousel-indicators button{
+        width: 12px;
+        height: 12px;
+        padding: 0;
+        border-top: none;
+        border-bottom: none;
+        color: $primary-color;
+        border-radius: 50%;
+        &.active{
+            background-color: $primary-color;
+            width: 26px;
+            border-radius: 11px!important;
+        }
+    }
+
+}
+.m-row{
+    h2{
+        font-weight: bold;
+        color: $dark-color;
+        font-size: rem(24px);
+    }
+    p{
+        color: #565353;
+        font-size: rem(18px);
+        padding-right: 112px;
+    }
+    .mr-right{
+        img{
+            max-width: 695px;
+        }
+    }
+}
+.carousel-section{
+    // height: 300px;
+    // background: #ccc;
+}
+.Banner-caption{
+    color: #fff;
+    z-index: 9999;
+    font-size:rem(56px);
+    top:165px;
+    width: 100%;
+    .container{
+        line-height: 60px;
+    }
+}
+// intro button
+.intro-btn{
+    padding: 5px 44px;
+    height: 52px;
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    @include radius(35px);
+    background-color: $primary-color;
+    align-items: center;
+    @include transition;
+    background-color: transparentize($primary-color, 0);
+    margin-top: 34px;
+    &:hover,&:focus,&:focus-visible{
+        outline: none;
+        background-color: transparentize($primary-color, .3);
+        padding: 5px 50px;
+        
+    }
+}
+.carousel-section{
+    
+}
