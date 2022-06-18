@@ -26,9 +26,20 @@ body{
         color: $primary-color;
     }
 }
+a{
+    img{
+        @include transitionmd
+    }
+    &:hover{
+        img{
+            opacity: .8;
+        }
+    }
+    
+}
 // global END
 //main banner
-.banner-section,.carousel-section{
+.banner-section,.carousel-section,.feature-scroll,.aseenon-scroll{
     .carousel-indicators {
         bottom: 50px;
         button{
@@ -61,9 +72,81 @@ body{
     }
 }
 
+
+.carousel-section,.feature-scroll,.aseenon-scroll{
+    .carousel-indicators{
+        button{
+            background-color: #DFE0E2!important;
+        }
+        display: flex;
+        justify-content: flex-start;
+        margin: 0;
+        bottom: 58px;
+    }
 }
-.feature-scroll{
-    
+.feature-scroll,.aseenon-scroll{
+    .ss-col{
+        h2{
+            font-weight: 800;
+        }
+        img{
+            width: calc(100% - 50px);
+            margin-bottom: 28px;
+        }
+        .fm-item{
+            padding: 0 30px;
+            text-align: center;
+        }
+        .btn-link{
+            font-size: rem(21px);
+        }
+    }
+    .carousel-indicators{
+        bottom: -25px!important;
+        justify-content: center!important;
+    }
+}
+.section-title{
+    font-size: 52px;
+    font-weight: bold;
+    color: $dark-color;
+}
+.qt,.qt-r{
+    font-size: 31px;
+    color: #000;
+    font-weight: 900;
+    padding: 0 7px;
+    transform: skew(10deg, 10deg);
+    display: inline-block;
+}
+.qt-r{
+    transform: skew(336deg, 357deg) !important;
+}
+.aseenon-scroll{
+    .fm-item{
+        padding: 0 20px;
+        p{
+            color: #767676;
+            font-size: rem(20px);
+        }
+        img{
+            width: 200px;
+            max-width: 100%;
+            &.trn-logo{
+                width: 134px;
+            }
+            &.tc-logo{
+                width: 240px;
+                margin-top: 30px;
+            }
+            &.ret-logo{
+                width: 102px;
+                margin-top: 12px;
+            }
+            
+        }
+    }
 }
 
 
+}//body END
