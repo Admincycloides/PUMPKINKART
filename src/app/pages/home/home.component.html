@@ -1,5 +1,5 @@
 <section class="banner-section mb-2 position-relative">
-  <ngb-carousel *ngIf="images" [interval]="1000">
+  <ngb-carousel *ngIf="images" [interval]="3000">
     <ng-template ngbSlide>
       <div class="picsum-img-wrapper">
         <img src="../../../assets/images/banner.png" alt="" class="main-banner
@@ -115,129 +115,225 @@
         </div>
 
       </section>
-      <section style="margin-top:500px;">
-        <carousel
-          [cellWidth]="'100%'"
+      <section class="feature-scroll">
+
+        <div class="container">
+          <ngb-carousel *ngIf="images" [interval]="3000">
+            <ng-template ngbSlide>
+              <div class="row slide-set">
+                <div class="col-4 ss-col">
+                  <div class="fm-item">
+                    <img src="../../../assets/images/f-img1.png" alt="" />
+                    <h2>Become a Delivery Hero</h2>
+                    <p>Be your own boss and make some extra cash by becoming a
+                      delivery driver with Pumpkin Kart Register today.</p>
+                  </div>
+                </div>
+                <div class="col-4 ss-col">
+                  <div class="fm-item">
+                    <img src="../../../assets/images/f-img1.png" alt="" />
+                    <h2>Become a Delivery Hero</h2>
+                    <p>Be your own boss and make some extra cash by becoming a
+                      delivery driver with Pumpkin Kart Register today.</p>
+                  </div>
+                </div>
+                <div class="col-4 ss-col">
+                  <div class="fm-item">
+                    <img src="../../../assets/images/f-img1.png" alt="" />
+                    <h2>Become a Delivery Hero</h2>
+                    <p>Be your own boss and make some extra cash by becoming a
+                      delivery driver with Pumpkin Kart Register today.</p>
+                  </div>
+                </div>
+              </div>
+
+            </ng-template>
+            <ng-template ngbSlide>
+              <div class="row slide-set">
+                <div class="col-4 ss-col">
+                  <div class="fm-item">
+                    <img src="../../../assets/images/f-img1.png" alt="" />
+                    <h2>Become a Delivery Hero</h2>
+                    <p>Be your own boss and make some extra cash by becoming a
+                      delivery driver with Pumpkin Kart Register today.</p>
+                  </div>
+                </div>
+                <div class="col-4 ss-col">
+                  <div class="fm-item">
+                    <img src="../../../assets/images/f-img1.png" alt="" />
+                    <h2>Become a Delivery Hero</h2>
+                    <p>Be your own boss and make some extra cash by becoming a
+                      delivery driver with Pumpkin Kart Register today.</p>
+                  </div>
+                </div>
+                <div class="col-4 ss-col">
+                  <div class="fm-item">
+                    <img src="../../../assets/images/f-img1.png" alt="" />
+                    <h2>Become a Delivery Hero</h2>
+                    <p>Be your own boss and make some extra cash by becoming a
+                      delivery driver with Pumpkin Kart Register today.</p>
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+            <ng-template ngbSlide>
+              <div class="row slide-set">
+                <div class="col-4 ss-col">
+                  <div class="fm-item">
+                    <img src="../../../assets/images/f-img1.png" alt="" />
+                    <h2>Become a Delivery Hero</h2>
+                    <p>Be your own boss and make some extra cash by becoming a
+                      delivery driver with Pumpkin Kart Register today.</p>
+                  </div>
+                </div>
+                <div class="col-4 ss-col">
+                  <div class="fm-item">
+                    <img src="../../../assets/images/f-img1.png" alt="" />
+                    <h2>Become a Delivery Hero</h2>
+                    <p>Be your own boss and make some extra cash by becoming a
+                      delivery driver with Pumpkin Kart Register today.</p>
+                  </div>
+                </div>
+                <div class="col-4 ss-col">
+                  <div class="fm-item">
+                    <img src="../../../assets/images/f-img1.png" alt="" />
+                    <h2>Become a Delivery Hero</h2>
+                    <p>Be your own boss and make some extra cash by becoming a
+                      delivery driver with Pumpkin Kart Register today.</p>
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+          </ngb-carousel>
+
+
+          <!-- <carousel
           [arrowsOutside]="true"
           [autoplay]="true"
           [dots]="true"
           [loop]="true">
-          <div class="carousel-cell">
-            <div>Lorem Ipsum is simply dummy text of the printing and
-              typesetting industry. Lorem Ipsum has been the industry's standard
-              dummy text ever since the 1500s, when an unknown printer took a
-              galley of type and scrambled it to make a type specimen book. It
-              has survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.</div>
-          </div>
-          <div class="carousel-cell">
-            <div>Lorem Ipsum is simply dummy text of the printing and
-              typesetting industry. Lorem Ipsum has been the industry's standard
-              dummy text ever since the 1500s, when an unknown printer took a
-              galley of type and scrambled it to make a type specimen book. It
-              has survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.</div>
-          </div>
-          <div class="carousel-cell">
-            <div>Lorem Ipsum is simply dummy text of the printing and
-              typesetting industry. Lorem Ipsum has been the industry's standard
-              dummy text ever since the 1500s, when an unknown printer took a
-              galley of type and scrambled it to make a type specimen book. It
-              has survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.</div>
-          </div><div class="carousel-cell">
-            <div>Lorem Ipsum is simply dummy text of the printing and
-              typesetting industry. Lorem Ipsum has been the industry's standard
-              dummy text ever since the 1500s, when an unknown printer took a
-              galley of type and scrambled it to make a type specimen book. It
-              has survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.</div>
-          </div>
-          <div class="carousel-cell">
-            <div>Lorem Ipsum is simply dummy text of the printing and
-              typesetting industry. Lorem Ipsum has been the industry's standard
-              dummy text ever since the 1500s, when an unknown printer took a
-              galley of type and scrambled it to make a type specimen book. It
-              has survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.</div>
-          </div><div class="carousel-cell">
-            <div>Lorem Ipsum is simply dummy text of the printing and
-              typesetting industry. Lorem Ipsum has been the industry's standard
-              dummy text ever since the 1500s, when an unknown printer took a
-              galley of type and scrambled it to make a type specimen book. It
-              has survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.</div>
-          </div><div class="carousel-cell">
-            <div>Lorem Ipsum is simply dummy text of the printing and
-              typesetting industry. Lorem Ipsum has been the industry's standard
-              dummy text ever since the 1500s, when an unknown printer took a
-              galley of type and scrambled it to make a type specimen book. It
-              has survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.</div>
-          </div><div class="carousel-cell">
-            <div>Lorem Ipsum is simply dummy text of the printing and
-              typesetting industry. Lorem Ipsum has been the industry's standard
-              dummy text ever since the 1500s, when an unknown printer took a
-              galley of type and scrambled it to make a type specimen book. It
-              has survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.</div>
-          </div><div class="carousel-cell">
-            <div>Lorem Ipsum is simply dummy text of the printing and
-              typesetting industry. Lorem Ipsum has been the industry's standard
-              dummy text ever since the 1500s, when an unknown printer took a
-              galley of type and scrambled it to make a type specimen book. It
-              has survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.</div>
-          </div><div class="carousel-cell">
-            <div>Lorem Ipsum is simply dummy text of the printing and
-              typesetting industry. Lorem Ipsum has been the industry's standard
-              dummy text ever since the 1500s, when an unknown printer took a
-              galley of type and scrambled it to make a type specimen book. It
-              has survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.</div>
-          </div>
-        </carousel>
+          <div class="carousel-cell fm-item">
+            <img src="../../../assets/images/f-img1.png" alt=""/>
+            <h2>Become a Delivery Hero</h2>
+            <p>Be your own boss and make some extra cash by becoming a delivery driver with Pumpkin Kart Register today.</p>
+          </div>          
+        </carousel> -->
+        </div>
       </section>
-      <div class="container p-5" [class.active]="actvrl" (click)="clickactive()">
+      <section class="app-download">
+        <div class="container">
+            <div class="row ad-row">
+              <div class="col-md-6 ad-left">
+                <img src="../../../assets/images/mobile.png" alt=""/>
+              </div>
+              <div class="col-md-6 ad-right">
+                <h2>GET MORE WITH OUR APPLICATION</h2>
+                <h1>Download<br/>Pumpkin Kart app</h1>
+                <p>Ethnic Experience is just a click away. Order your favourite food, grocery, alcohol and more.</p>
+                <div class="w-100 d-flex sd-buttons justify-content-between">
+                  <img src="../../../assets/images/gplay.png" alt="" class="mr-2"/>
+                  <img src="../../../assets/images/ios.png" alt=""/>
+                </div>
+              </div>
+            </div>
+        </div>
+
+      </section>
+      <section class="updates-section">
+        <div class="container">
+          <ngb-carousel *ngIf="images" [interval]="3000">
+            <ng-template ngbSlide>
+              <div class="row slide-set">
+                <div class="col-4 upd-col">
+                  <div class="upd-item">
+                    <img src="../../../assets/images/f-img1.png" alt="" />
+                    <h2>Become a Delivery Hero</h2>
+                    <p>Be your own boss and make some extra cash by becoming a
+                      delivery driver with Pumpkin Kart Register today.</p>
+                  </div>
+                </div>
+                <div class="col-4 upd-col">
+                  <div class="upd-item">
+                    <img src="../../../assets/images/f-img1.png" alt="" />
+                    <h2>Become a Delivery Hero</h2>
+                    <p>Be your own boss and make some extra cash by becoming a
+                      delivery driver with Pumpkin Kart Register today.</p>
+                  </div>
+                </div>
+                <div class="col-4 upd-col">
+                  <div class="upd-item">
+                    <img src="../../../assets/images/f-img1.png" alt="" />
+                    <h2>Become a Delivery Hero</h2>
+                    <p>Be your own boss and make some extra cash by becoming a
+                      delivery driver with Pumpkin Kart Register today.</p>
+                  </div>
+                </div>
+              </div>
+
+            </ng-template>
+            <ng-template ngbSlide>
+              <div class="row slide-set">
+                <div class="col-4 upd-col">
+                  <div class="upd-item">
+                    <img src="../../../assets/images/f-img1.png" alt="" />
+                    <h2>Become a Delivery Hero</h2>
+                    <p>Be your own boss and make some extra cash by becoming a
+                      delivery driver with Pumpkin Kart Register today.</p>
+                  </div>
+                </div>
+                <div class="col-4 upd-col">
+                  <div class="upd-item">
+                    <img src="../../../assets/images/f-img1.png" alt="" />
+                    <h2>Become a Delivery Hero</h2>
+                    <p>Be your own boss and make some extra cash by becoming a
+                      delivery driver with Pumpkin Kart Register today.</p>
+                  </div>
+                </div>
+                <div class="col-4 upd-col">
+                  <div class="upd-item">
+                    <img src="../../../assets/images/f-img1.png" alt="" />
+                    <h2>Become a Delivery Hero</h2>
+                    <p>Be your own boss and make some extra cash by becoming a
+                      delivery driver with Pumpkin Kart Register today.</p>
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+            <ng-template ngbSlide>
+              <div class="row slide-set">
+                <div class="col-4 upd-col">
+                  <div class="upd-item">
+                    <img src="../../../assets/images/f-img1.png" alt="" />
+                    <h2>Become a Delivery Hero</h2>
+                    <p>Be your own boss and make some extra cash by becoming a
+                      delivery driver with Pumpkin Kart Register today.</p>
+                  </div>
+                </div>
+                <div class="col-4 upd-col">
+                  <div class="upd-item">
+                    <img src="../../../assets/images/f-img1.png" alt="" />
+                    <h2>Become a Delivery Hero</h2>
+                    <p>Be your own boss and make some extra cash by becoming a
+                      delivery driver with Pumpkin Kart Register today.</p>
+                  </div>
+                </div>
+                <div class="col-4 upd-col">
+                  <div class="upd-item">
+                    <img src="../../../assets/images/f-img1.png" alt="" />
+                    <h2>Become a Delivery Hero</h2>
+                    <p>Be your own boss and make some extra cash by becoming a
+                      delivery driver with Pumpkin Kart Register today.</p>
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+          </ngb-carousel>
+        </div>
+
+      </section>
+
+
+      <div class="container p-5" [class.active]="actvrl"
+        (click)="clickactive()">
         This is the content
       </div>

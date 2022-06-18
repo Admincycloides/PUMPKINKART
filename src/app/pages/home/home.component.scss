@@ -72,6 +72,21 @@
         
     }
 }
-.carousel-section{
+.feature-scroll{
+    .fm-item{
+        img{
+           
+           height: 300px;
+        }
+        h2{
+            font-weight: bold;
+            color: $dark-color;
+            font-size: rem(24px);
+        }
+        p{
+            color: #565353;
+            font-size: rem(18px);
+        }
+    }
     
 }

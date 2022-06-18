@@ -11,14 +11,14 @@ export class HomeComponent implements OnInit {
   constructor(config: NgbCarouselConfig) {
     // customize default values of carousels used by this component tree
     config.interval = 1000;
-    config.wrap = false;
+    config.wrap = true;
     config.keyboard = false;
     config.pauseOnHover = false;
   }
 
   ngOnInit(): void {
   }
- images = [944, 1011, 984].map((n) => `https://picsum.photos/id/${n}/900/500`);
+ images = [944, 1011, 984].map((n) => ``);
   // paused = false;
   // unpauseOnArrow = false;
   // pauseOnIndicator = false;
