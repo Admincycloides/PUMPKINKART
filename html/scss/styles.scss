@@ -97,6 +97,11 @@ button{
     font-size: 44px;
     font-weight: 900;
 }
+.details{
+    p{
+        padding-bottom: 24px;
+    }
+}
 // global END
 //main banner
 .banner-section,.carousel-section,.feature-scroll,.aseenon-scroll{
@@ -236,6 +241,13 @@ button{
         }
     }
 }
+.page-content{
+    p{
+        color: #767676;
+        font-size: 1.25rem;
+        line-height: rem(32px);
+    }
+}
 
 // Login page
 .auth-container{
@@ -340,6 +352,8 @@ button{
 // header
 header{
     background-color: #fff;
+    box-shadow: 0px 1px 19px 4px rgba(0,0,0,.07);
+
     .header-row{
         height:70px;
         .logo-container{
@@ -625,6 +639,73 @@ header{
 
 }
 //contact END
+// About us
+
+.mp-para{
+    text-align: center;
+}
+// team
+.card-shadow{
+    box-shadow: 0px 0px 8px 4px rgba(0,0,0,0.07);
+    border-radius: 5px;
+    @include radius(5px);
+}
+
+.team-item{
+    .t-item{
+        padding: 18px;
+        img{
+            @include radius(50%);
+            width: 165px;
+            height: 165px;
+            object-fit: cover;
+            margin-bottom: 18px;
+        }
+        h2{
+            font-size: 28px;
+            text-align: center;
+            font-weight: bold;
+            color: $dark-color;
+        }
+        h4{
+            color:$primary-color;
+            font-size: 20px;
+
+        }
+    }
+}
+// About us END
+// News
+.news-row{
+    border-top: solid 1px #e6e6e6;
+    padding-top: 28px;
+    .news-img{
+        img{
+            width: 100%;
+        }
+    }
+    .news-details{
+        .n-title{
+            font-size:rem(22px);
+            color: $primary-color;
+        }
+        .n-caption{
+            color:$dark-color-three ;
+            font-weight: bold;
+            font-size: rem(25px);
+        }
+        p{
+            a{
+               color: #767676 ;
+               text-decoration: none;
+               &:hover{
+                color: $primary-color;
+               }
+            }
+        }
+    }
+}
+
 
 
 }//body END
