@@ -28,6 +28,7 @@ a{
     img{
         @include transitionmd
     }
+    text-decoration: none;
     &:hover{
         img{
             opacity: .8;
