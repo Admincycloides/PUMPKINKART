@@ -37,6 +37,13 @@ a{
     }
     
 }
+button{
+    outline: none;
+    &:focus, &:focus-visible{
+        outline: none;
+
+    }
+}
 // global END
 //main banner
 .banner-section,.carousel-section,.feature-scroll,.aseenon-scroll{
@@ -148,5 +155,74 @@ a{
     }
 }
 
+// inner pages
+.inner-banner {
+    img{
+        width: 100%;
+        max-width: 100%;
+    }
+    .container{
+        color: #fff;
+        h1{
+            font-size: rem(66px);
+        }
+        .bread-crump{
+            font-size: 20px;
+            font-weight: bold;
+            .active{
+                font-weight: normal;
+            }
+            a{
+                color: #fff;
+                text-decoration: none;
+                &:hover{
+                    color: #fff;
+                    opacity: .8;
+                }
+            }
+        }
+    }
+}
+.auth-container{
+    padding-top: 122px;
+    .auth-box{
+        padding: 20px;
+        @include radius(10px);
+        box-shadow: 0px 0px 15px 5px rgba(0,0,0,.09);
+        padding: 48px;
+        h2{
+            font-weight: 700;
+            margin-bottom: 20px;
+            font-size: 30px;
+        }
+        .thm-fcontrol{
+            border: solid #d7d7d7 1px;
+            height: 48px;
+            @include radius(5px);
+            padding:12px 18px;
+            &::placeholder{
+                color: #cbcbcb;
+            }
+
+        }
+    }
+    button{
+        padding: 5px 20px;
+        height: 43px;
+        font-weight: 500;
+        font-size: 18px;
+        min-width: 130px;
+        @include radius(7px);
+        &.cancel{
+            border: solid 1px $primary-color;
+        }
+        &.btn-prim{
+            background: $bg-color;
+            border: solid 1px $primary-color;
+            color: #fff;
+            
+        }
+    }
+}
 
 }//body END
