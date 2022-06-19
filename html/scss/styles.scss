@@ -1,0 +1,630 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "variables";
+@import "mixins";
+@import "responsive";
+@import "static";
+
+/* Importing font */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body{
+    font-family: 'Outfit', sans-serif;
+// global
+.btn-link{
+    border: none;
+    color: $primary-color;
+    text-decoration: none;
+    background: transparent;
+    &:focus,&:focus-visible{
+        outline: none;
+    }
+    &:hover{
+        text-decoration: underline;
+        color: $primary-color;
+    }
+}
+a{
+    img{
+        @include transitionmd
+    }
+    &:hover{
+        img{
+            opacity: .8;
+        }
+    }
+    
+}
+button{
+    outline: none;
+    &:focus, &:focus-visible{
+        outline: none;
+
+    }
+}
+.list-content{
+    li{
+        margin-bottom: 20px;
+        list-style: none;
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            top: 7px;
+            left: -30px;
+            width: 12px;
+            height: 12px;
+            @include radius(50%);
+            background:transparentize($primary-color,.4);
+        }
+    }
+}
+.aut-sep{
+    position: relative;
+    border-bottom: solid 1px #ccc;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    span{
+        position: absolute;
+        display: inline-block;
+        background-color: #fff;
+        min-width: 70px;
+        text-align: center;
+        top: -13px;
+        font-size: 19px;
+        color: $dark-color-three;
+    }
+}
+// button hover
+.cancel{
+    color: $primary-color;
+    &:hover{
+        background-color:$primary-color;
+        color: #fff; 
+    }
+}
+.btn-prim{
+   color: #fff;
+   background-color: $primary-color;
+   @include box-shadow(0px 2px 6px 0px rgba(0,0,0,0.22));
+   &:hover{
+       background-color:transparentize($primary-color,0.2)!important;
+   }
+}
+// button hover END
+.page-title{
+    font-size: 44px;
+    font-weight: 900;
+}
+// global END
+//main banner
+.banner-section,.carousel-section,.feature-scroll,.aseenon-scroll{
+    .carousel-indicators {
+        bottom: 50px;
+        button{
+        width: 12px;
+        height: 12px;
+        padding: 0;
+        border-top: none;
+        border-bottom: none;
+        color: $primary-color;
+        border-radius: 50%;
+        background-color: #fff!important;
+        opacity: 1;
+        &.active{
+            background-color: $primary-color!important;
+            width: 26px;
+            border-radius: 11px!important;
+        }
+        }
+        
+    }
+    .carousel-control-prev-icon, .carousel-control-next-icon{
+        width: 3rem;
+        height: 3rem;
+    }
+    .carousel-control-prev{
+        left: -31px;
+    }
+    .carousel-control-next{
+        right: 0;
+    }
+}
+
+
+.carousel-section,.feature-scroll,.aseenon-scroll{
+    .carousel-indicators{
+        button{
+            background-color: #DFE0E2!important;
+        }
+        display: flex;
+        justify-content: flex-start;
+        margin: 0;
+        bottom: 58px;
+    }
+}
+.feature-scroll,.aseenon-scroll{
+    .ss-col{
+        h2{
+            font-weight: 800;
+        }
+        img{
+            width: calc(100% - 50px);
+            margin-bottom: 28px;
+        }
+        .fm-item{
+            padding: 0 30px;
+            text-align: center;
+        }
+        .btn-link{
+            font-size: rem(21px);
+        }
+    }
+    .carousel-indicators{
+        bottom: -25px!important;
+        justify-content: center!important;
+    }
+}
+.section-title{
+    font-size: 52px;
+    font-weight: bold;
+    color: $dark-color;
+}
+.qt,.qt-r{
+    font-size: 31px;
+    color: #000;
+    font-weight: 900;
+    padding: 0 7px;
+    transform: skew(10deg, 10deg);
+    display: inline-block;
+}
+.qt-r{
+    transform: skew(336deg, 357deg) !important;
+}
+.aseenon-scroll{
+    .fm-item{
+        padding: 0 20px;
+        p{
+            color: #767676;
+            font-size: rem(20px);
+        }
+        img{
+            width: 200px;
+            max-width: 100%;
+            &.trn-logo{
+                width: 134px;
+            }
+            &.tc-logo{
+                width: 240px;
+                margin-top: 30px;
+            }
+            &.ret-logo{
+                width: 102px;
+                margin-top: 12px;
+            }
+            
+        }
+    }
+}
+
+// inner pages
+.inner-banner {
+    img{
+        width: 100%;
+        max-width: 100%;
+    }
+    .container{
+        color: #fff;
+        h1{
+            font-size: rem(66px);
+        }
+        .bread-crump{
+            font-size: 20px;
+            font-weight: bold;
+            .active{
+                font-weight: normal;
+            }
+            a{
+                color: #fff;
+                text-decoration: none;
+                &:hover{
+                    color: #fff;
+                    opacity: .8;
+                }
+            }
+        }
+    }
+}
+
+// Login page
+.auth-container{
+    .list-content{
+        padding-right: 20px;
+    }
+    .auth-box{
+        padding: 20px;
+        @include radius(10px);
+        box-shadow: 0px 0px 15px 5px rgba(0,0,0,.09);
+        padding: 48px;
+        h2{
+            font-weight: 700;
+            margin-bottom: 20px;
+            font-size: 30px;
+        }
+        .thm-fcontrol{
+            border: solid #d7d7d7 1px;
+            height: 48px;
+            @include radius(5px);
+            padding:12px 18px;
+            &::placeholder{
+                color: #cbcbcb;
+            }
+
+        }
+    }
+    button{
+        padding: 5px 20px;
+        height: 43px;
+        font-weight: 500;
+        font-size: 18px;
+        min-width: 130px;
+        @include radius(7px);
+        &.cancel{
+            border: solid 1px $primary-color;
+        }
+        &.btn-prim{
+            background: $bg-color;
+            border: solid 1px $primary-color;
+            color: #fff;
+            
+        }
+    }
+}
+
+.auth-container{
+    padding: 122px 0 20px;
+    .auth-content{
+        padding: 0 108px 0 55px;
+        .sub-title{
+            font-weight: 700;
+            font-size: 28px;
+        }
+        .soc-title{
+            font-size: 18px;
+            color: $dark-color-three;
+            a{
+                color: $primary-color;
+                text-decoration: none;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    //
+    .btfacebook{
+        background-color: #3b5999;
+    }
+    .btgoogle{
+        background-color: #dd4b39;
+    }
+    .sbtn{
+        min-width: 200px;
+        padding: 5px;
+        border: none;
+        @include transitionmd;
+        font-weight:normal;
+        color: #fff;
+        font-size: 15px;
+        &.btgoogle{
+            img{
+                position: relative;
+                bottom: 1px;
+            }
+        }
+        img{
+            width: 20px;
+            margin-right: 2px;
+        }
+        &:hover{
+            opacity: .7;
+        }
+        &:focus,&:focus-visible{
+            outline: none;
+        }
+    }
+}
+
+// Login page END
+// header
+header{
+    background-color: #fff;
+    .header-row{
+        height:70px;
+        .logo-container{
+            .logo{
+                max-width: 208px;
+                bottom: 3px;
+            }
+        }
+    }
+    .auth-btn{
+        @include radius(15px);
+        padding:5px;
+        border:solid 1px $primary-color;
+        min-width: 108px;
+        height: 28px;
+        line-height: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+         font-size: 14px;
+         &.signin-btn{
+             color: $primary-color;
+             &:hover{
+                 background-color:$primary-color;
+                 color: #fff; 
+             }
+         }
+         &.signup-btn{
+            color: #fff;
+            background-color: $primary-color;
+            // box-shadow: 0px 2px 6px 0px rgb(0 0 0 / 22%) ;
+            @include box-shadow(0px 2px 6px 0px rgba(0,0,0,0.22));
+            &:hover{
+                background-color:transparentize($primary-color,0.2);
+            }
+        }
+    }
+}
+// header END
+// footer
+
+
+.footer-section{
+    background-color: $dark-color-two;
+    .credits{
+        padding: 5px;
+        color: #fff;
+        font-size: 14px;
+        .container{
+            border-top: solid 1px #ccc;
+            padding: 20px 0;
+        }
+    }
+    .footer-container{
+        padding: 80px 15px;
+        color: $dark-color;
+        .qlinks{
+            h2{
+                font-size: 22px;
+                font-weight: bold;
+                color: #fff;
+            }
+            ul{
+                padding: 0;
+                line-height: 30px;
+                li{
+                    list-style: none;
+                    margin-bottom: 7px;
+                    a{
+                        text-decoration: none;
+                        color: #fff;
+                        padding: 5px 0;
+                        font-size: 18px;
+                        @include transitionmd;
+                        &:hover{
+                            color: $primary-color;
+                        }
+                    }
+                }
+            }
+        }
+        .contact-col{
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            h2{
+                font-size: 22px;
+                margin-bottom: 22px;
+                font-weight: bold;
+                color: #fff;
+            }
+            .logo {
+                max-width: 200px;
+                margin-bottom: 15px;
+            }
+            a{
+                
+                img{
+                    @include transitionmd;
+                }
+                &:hover{
+                    img{
+                        opacity: .7;
+                    }
+                }
+                
+            }
+            
+        }
+        
+    }
+    .social-links{
+        a{
+            &:hover{
+                img{
+                    opacity: .6;
+                }
+                
+            }
+            img{
+                margin-left: 30px;
+                transform: scale(.8);
+    
+            }
+        }
+
+    }
+}
+
+//footer END
+// Home
+.banner-section,.carousel-section{
+    background: #fff;
+    .carousel-indicators button{
+        width: 12px;
+        height: 12px;
+        padding: 0;
+        border-top: none;
+        border-bottom: none;
+        color: $primary-color;
+        border-radius: 50%;
+        &.active{
+            background-color: $primary-color;
+            width: 26px;
+            border-radius: 11px!important;
+        }
+    }
+
+}
+.m-row{
+    h2{
+        font-weight: bold;
+        color: $dark-color;
+        font-size: rem(24px);
+    }
+    p{
+        color: #767676;
+        font-size: rem(20px);
+        padding-right: 112px;
+    }
+    .mr-right{
+        img{
+            max-width: 695px;
+        }
+    }
+}
+
+.Banner-caption{
+    color: #fff;
+    z-index: 9999;
+    font-size:rem(56px);
+    top:165px;
+    width: 100%;
+    font-weight: 600;
+    .container{
+        line-height: 60px;
+    }
+}
+// intro button
+.intro-btn{
+    padding: 5px 44px;
+    height: 52px;
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    @include radius(35px);
+    background-color: $primary-color;
+    align-items: center;
+    @include transition;
+    background-color: transparentize($primary-color, 0);
+    margin-top: 34px;
+    &:hover,&:focus,&:focus-visible{
+        outline: none;
+        background-color: transparentize($primary-color, .3);
+        padding: 5px 50px;
+        
+    }
+}
+.feature-scroll{
+    .fm-item{
+        h2{
+            font-weight: bold;
+            color: $dark-color;
+            font-size: rem(24px);
+            margin-bottom: 15px;
+        }
+        p{
+            color: #767676;
+            font-size: rem(20px);
+        }
+    }
+    
+}
+.app-download{
+    .ad-left{
+        img{
+            max-width: 100%;
+        }
+    }
+    p{
+            color: #767676;
+            font-size: rem(20px);
+            line-height: rem(26px);
+            margin-bottom: rem(36px);
+    }
+    h2{
+        color: $dark-color;
+        font-size: rem(52px);
+        font-weight: bold;
+        line-height: rem(66px);
+        margin-bottom: rem(30px);
+    }
+}
+.d-icons{
+    width: 100%;
+    max-width: 205px;
+    height: fit-content;
+    margin-right: 32px;
+}
+// Home END
+// contact
+.fs-left{
+    img{
+        width: 100%;
+    }
+}
+.page-form{
+    .btn-submit{
+        color: #fff;
+        background-color: $dark-color-two;
+        padding: 10px 12px;
+        border: solid 1px $dark-color-two;
+        @include transition;
+        &:hover{
+            opacity: .8;
+        }
+    }
+    
+    .thm-fcontrol{
+        height: 45px;
+        border: solid 1px #F7F7F7;
+        background-color: #F7F7F7;
+        @include radius(3px);
+        @include transition;
+        &::placeholder{
+            color: transparentize( $dark-color-three, .5);
+        }
+        &:focus{
+            box-shadow: 0 0 0 0.25rem rgba(255, 233, 225,1);
+        }
+    }
+    .inline-select{
+        select{
+            width: 65px;
+            @include radius(3px 0 0 3px);
+            border-right: solid 3px #f1f1f1;
+        }
+    }
+    .form-label{
+        color: $dark-color-three;
+    }
+    
+
+}
+//contact END
+
+
+}//body END
