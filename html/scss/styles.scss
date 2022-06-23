@@ -103,6 +103,19 @@ button{
         padding-bottom: 24px;
     }
 }
+.form-check-input[type=checkbox]{
+    @include radius(2px);
+}
+.form-check-input{
+    border-color: $primary-color;
+    &:checked{
+        background-color: $primary-color;
+        border-color: $primary-color;
+    }
+    &:focus{
+        box-shadow: none;
+    }
+}
 // global END
 //main banner
 .banner-section,.carousel-section,.feature-scroll,.aseenon-scroll{
@@ -273,7 +286,16 @@ button{
             &::placeholder{
                 color: #cbcbcb;
             }
+            &:focus{
+                box-shadow: 0 0 0 0.25rem rgba(255, 233, 225,1);
+            }
 
+        }
+        select{
+            &.thm-fcontrol{
+                color: transparentize( $dark-color-three, .5);
+            }
+            
         }
     }
     button{
@@ -311,6 +333,20 @@ button{
                 text-decoration: none;
                 &:hover{
                     text-decoration: underline;
+                }
+            }
+        }
+        .auth-form{
+            .inline-select{
+                select{
+                    padding: 5px!important;
+                    width: 55px;
+                    @include radius(5px 0 0 5px);
+                    color:#ccc;
+            
+                }
+                input{
+                    @include radius(0 5px 5px 0);
                 }
             }
         }
@@ -361,6 +397,9 @@ header{
             .logo{
                 max-width: 208px;
                 bottom: 3px;
+                &:focus,&:focus-visible{
+                    outline: none;
+                }
             }
         }
     }
@@ -526,9 +565,10 @@ header{
     color: #fff;
     z-index: 9999;
     font-size:rem(56px);
-    top:165px;
+    top: calc(50% - 100px);
     width: 100%;
     font-weight: 600;
+    height: 200px;
     .container{
         line-height: 60px;
     }
@@ -602,6 +642,70 @@ header{
     }
 }
 .page-form{
+     .soc-title {
+        font-size: 18px;
+        color: #241B17;
+    }
+    .soc-top{
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+    .soc-bottom{
+        margin-top: 30px;
+        margin-bottom: 18px;
+    }
+    .btfacebook{
+        background-color: #3B5999;
+        img{
+            width: 10px;
+        }
+    }
+    .btgoogle{
+        background-color: #E9544F;
+        img{
+            width: 18px;
+        }
+    }
+    .btlink{
+        background-color: #0A66C2;
+        img{
+            width: 16px;
+            position: relative;
+            bottom: 3px;
+        }
+    }
+    .sbtn{
+        min-width: 100px;
+        padding: 5px;
+        border: none;
+        @include transitionmd;
+        @include radius(8px);
+        height: 42px;
+        font-weight:normal;
+        color: #fff;
+        font-size: 15px;
+        &.btgoogle{
+            img{
+                position: relative;
+                bottom: 1px;
+            }
+        }
+        img{
+            margin-right: 2px;
+        }
+        &:hover{
+            opacity: .7;
+        }
+        &:focus,&:focus-visible{
+            outline: none;
+        }
+    }
+    a{
+        color:$primary-color;
+        &:hover{
+            opacity: .7;
+        }
+    }
     .btn-submit{
         color: #fff;
         background-color: $dark-color-two;
@@ -626,6 +730,12 @@ header{
             box-shadow: 0 0 0 0.25rem rgba(255, 233, 225,1);
         }
     }
+    select{
+        &.thm-fcontrol{
+            color: transparentize( $dark-color-three, .5);
+        }
+        
+    }
     .inline-select{
         select{
             width: 65px;
@@ -636,7 +746,13 @@ header{
     .form-label{
         color: $dark-color-three;
     }
-    
+    h2{
+        font-weight: bold;
+        font-size: 24px;
+        color: $dark-color-three;
+        margin-bottom: 15px;
+
+    }
 
 }
 //contact END
@@ -644,6 +760,7 @@ header{
 
 .mp-para{
     text-align: center;
+    padding: 0 120px;
 }
 // team
 .card-shadow{
@@ -655,6 +772,11 @@ header{
 .team-item{
     .t-item{
         padding: 18px;
+        @include transition;
+        &:hover{
+            box-shadow: none!important;
+            background-color: #fff2ec;
+        }
         img{
             @include radius(50%);
             width: 165px;
@@ -694,15 +816,14 @@ header{
             color:$dark-color-three ;
             font-weight: bold;
             font-size: rem(25px);
-        }
-        p{
             a{
-               color: #767676 ;
-               text-decoration: none;
-               &:hover{
-                color: $primary-color;
-               }
-            }
+                color:$dark-color-three ;
+                text-decoration: none;
+                &:hover{
+                    color:$dark-color-three ;
+                    opacity: .7;
+                }
+             }
         }
     }
 }
