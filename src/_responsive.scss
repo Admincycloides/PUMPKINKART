@@ -5,6 +5,21 @@
 
 
 }
+@media only screen and (min-width: 993px){
+    .ad-right{
+            padding-left: 70px;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    // .sauth-btn-row{
+    //     flex-flow: column;
+    //     .sbtn{
+    //         margin-bottom: 10px;
+    //     }
+    // }
+}
+
 @media only screen and (min-width: 1672px){
 
 
@@ -52,6 +67,47 @@
 
 }
 @media only screen and (max-width: 991px){
+    html{
+        font-size: 12px;
+    }
+    body .Banner-caption{
+        font-size: 32px!important;
+        top: 17%!important;
+        .container{
+            line-height: normal!important;
+        }
+    }
+    body .intro-btn{
+        padding: 5px 28px!important;
+        height: 46px!important;
+        font-size: 14px!important;
+    }
+    .carousel-indicators{
+        display: none;
+    }
+    body .auth-container {
+        padding: 45px 15px 20px!important;
+    }
+    body .auth-container .auth-content {
+        padding: 0 20px!important;
+    }
+    body .list-content li::after{
+        top: 3px!important;
+        left: -22px!important;
+    }
+    body .auth-container .auth-box{
+        padding: 30px!important;
+    }
+    .mp-para{
+        padding: 0px!important;
+    }
+    .carousel-control-prev{
+        left: 0!important;
+    }
+
+    .d-icons{
+        margin-right: 0!important;
+    }
 
 }
 
@@ -61,7 +117,89 @@
 }
 
 @media only screen and (max-width: 768px){
+    body .carousel-section .carousel-indicators, body .feature-scroll .carousel-indicators, body .aseenon-scroll .carousel-indicators{
+        justify-content: center!important;
+        bottom: -18px!important;
+    }
+    body .m-row .mr-right img {
+        max-width: 350px!important;
+    }
+    body .banner-section{
+        margin-bottom: 30px!important;
+    }
+    body .m-row p {
+        padding-right: 0px!important;
+    }
+    body .app-download h2,body .app-download p,body .section-title{
+        text-align: center;
+    }
+   .ad-right{
+    .sd-buttons{
+        flex-flow:column;
+        align-items: center;
+        a{
+            margin-bottom: 15px;
+        }
+    }
+   }
+   body .feature-scroll .ss-col .fm-item, body .aseenon-scroll .ss-col .fm-item{
+    padding: 0!important;
+   }
+   .feature-scroll,.aseenon-scroll{
+    padding: 64px 0;
+    .fm-item{
+        margin-bottom: 30px;
+    }
+    .ss-col,.as-col{
+        width: 100%!important;
 
+    }
+}
+.qlinks,.contact-col{
+    text-align: center;
+}
+.contact-col{
+    align-items: center!important;
+    margin-top: 20px!important;
+}
+body .inner-banner .container h1 {
+    font-size: 18px!important;
+}
+body .inner-banner .container .bread-crump {
+    font-size: 10px!important;
+}
+.credits{
+    .container{
+        flex-flow: column;
+        .cright{
+            margin-bottom: 18px;
+        }
+    }
+}
+.fs-left{
+    margin-bottom: 58px;
+}
+.news-img{
+    margin-bottom: 20px;
+}
+.auth-btnrow,.auth-container{
+   flex-flow: column;
+   .thm-btn,.sbtn{
+    width: 100%!important;
+    margin-bottom: 10px;
+    margin-left: 0!important;
+    margin-right: 0!important;
+   }
+}
+body .auth-container .auth-content .soc-title{
+    font-size: 16px!important;
+}
+body .auth-container .list-content{
+    padding-left: 40px!important;
+}
+.fs-left{
+    display: none;
+}
 }
 @media only screen and (min-width: 769px){
 
@@ -69,7 +207,30 @@
 @media only screen and (min-width: 576px) and (max-width: 768px){
 
 }
-@media only screen and (max-width: 550px){
+@media only screen and (max-width: 575px){
+    .logo-container,.nav-container{
+        display: flex!important;
+        justify-content: center!important;
+        padding: 8px 0px!important;
+    }
+    .header-row{
+        height: auto!important;
+    }
+    body header .header-row .logo-container .logo {
+        max-width: 245px!important;
+        bottom: 0;
+        margin-top: 8px;
+    }
+    body .Banner-caption {
+        font-size: 20px !important;
+        top: 17% !important;
+    }
+    .banner-section{
+        .carousel-indicators{
+            display: none;
+        }
+    }
+    
 
 }
 

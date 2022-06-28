@@ -3,6 +3,12 @@
 @import "../../responsive";
 @import "../../static";
 
+// footer
+
+.fc-row{
+    display: flex;
+    align-items: center;
+}
 .footer-section{
     background-color: $dark-color-two;
     .credits{
@@ -15,7 +21,7 @@
         }
     }
     .footer-container{
-        padding: 80px 15px;
+        padding: 60px 15px;
         color: $dark-color;
         .qlinks{
             h2{
@@ -26,6 +32,7 @@
             ul{
                 padding: 0;
                 line-height: 30px;
+                margin-bottom: 0!important;
                 li{
                     list-style: none;
                     margin-bottom: 7px;
@@ -45,7 +52,7 @@
         .contact-col{
             font-size: 18px;
             font-weight: bold;
-            margin-bottom: 20px;
+            margin-bottom: 0px;
             h2{
                 font-size: 22px;
                 margin-bottom: 22px;
@@ -57,6 +64,12 @@
                 margin-bottom: 15px;
             }
             a{
+                &:last-child{
+                    .logo{
+                        margin-bottom: 0!important;
+                    }
+                    
+                }
                 
                 img{
                     @include transitionmd;
@@ -89,3 +102,5 @@
 
     }
 }
+
+//footer END

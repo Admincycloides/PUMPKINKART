@@ -1,42 +1,41 @@
-<section class="inner-banner d-flex position-relative align-items-center justify-content-center">
-    <img src="../../../../assets/images/login-inner.png" alt=""/>
-    <div class="container position-absolute text-center">
-        <h1>Login As User</h1>
-        <span class="bread-crump"><a routerLink="/home">Home</a> / <span class="active">Login As User</span></span>
-    </div>
-</section>
-<section class="page-content">
-    <div class="container auth-container">
-        <div class="row">
-            <div class="col-md-5">
-                <h2>User</h2>
-                <ul class="list-content">
-                    <li>Login or register with your name, mobile number, email or social media credentials</li>
-                    <li>Provide your location details and get a list of stores nearby</li>
-                    <li>Tap on the store nearby to you and tap on the items you need and place the order</li>
-                    <li>Track the delivery and get notified as soon as delivery gets done</li>
-                </ul>
+<section class="page-content mt-5">
+    <div class="container">
+        <div class="page-title text-center mb-5">Login</div>
+        <div class="row login-form">
+            <div class="col-md-6 fs-left text-center">
+                <img src="../../../../assets/images/login.png" alt="" />
             </div>
-            <div class="col-md-7">
-                <div class="auth-content">
-                    <div class="auth-box">
-                        <h2>Get Started</h2>
-                        <div class="auth-form">
-                            <form>
-                                <div class="mb-4">
-                                    <input type="text" class="form-control thm-fcontrol" id="" placeholder="Email or Phone No.">
-                                  </div>
-                                  <div class="mb-4">
-                                    <input type="password" class="form-control thm-fcontrol" id="" placeholder="Password">
-                                  </div>
-                                  <div class="mb-3 auth-btnrow d-flex justify-content-end">
-                                    <button class="btn thm-btn cancel ">Cancel</button>
-                                    <button class="btn thm-btn btn-prim mx-3">Login</button>
-                                 </div>
-                            </form>
-                        </div>
-                        
-                    </div>
+            <div class="col-md-6 fs-right px-5">
+                <div class="page-form">
+                    <form>
+                        <div class="mb-4 row">
+                            <div class="col-md-12 mb-4">
+                              <label for="" class="form-label">User Name</label>
+                              <input type="text" class="form-control thm-fcontrol" id=""
+                                placeholder="Enter your User Name.">
+                                <span class="error">Please enter a valid User Name</span>
+                            </div>
+                            <div class="col-md-12 mb-4">
+                              <label for="" class="form-label">Password</label>
+                              <input type="password" class="form-control thm-fcontrol"
+                                id="" placeholder="Enter your Password.">
+                            </div>
+                          </div>
+                          <div class="error-block d-flex justify-content-center align-items-center">
+                            Somethink went wrong
+                          </div>
+                          <div class="col-md-12 mb-4 button-row">
+                            <button type="submit" class="btn thm-btn btn-submit w-100">SUBMIT</button>
+                          </div>
+                          <h3 class="soc-title f-password"><a href="signin.html">Forgot Password?</a></h3>
+                          <h3 class="soc-title text-center soc-top">Don't have an account? <a href="user-signup.html">Sign Up</a></h3>
+                          <h3 class="soc-title text-center soc-bottom">Login with social accounts</h3>
+                          <div class="sauth-btn-row d-flex justify-content-center mb-4">
+                            <button class="sbtn btfacebook"><img src="../../../../assets/images/face.png"></button>
+                            <button class="sbtn btgoogle mx-3"><img src="../../../../assets/images/google.png"></button>
+                            <button class="sbtn btlink"><img src="../../../../assets/images/linkedin.png"></button>
+                          </div>
+                    </form>
                 </div>
             </div>
         </div>
